@@ -43,6 +43,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-family: 'Happy Monkey', cursive;
+    font-weight: 900;
 }
 #excerpt {
     text-transform: capitalize;
@@ -66,7 +68,6 @@ p {
 }
 .hero-container {
     position: relative;
-    /* background: #fff; */
     display: block;
     border-radius: 10px;
    
@@ -82,9 +83,12 @@ p {
     flex-direction: column;
     justify-content: space-between;
     
+    
  }
  header {
     padding: .5em 0;
+    
+    
  }
  
  
@@ -93,6 +97,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    padding-bottom: 0;
     font-weight: 900;
     font-size: .8rem;
     list-style: none;
@@ -107,8 +112,8 @@ p {
     color: #0a0908;
  }
  li a:hover,
- li a:focus {
-    font-size: .9rem;
+ li a:focus,
+ li a :active {
     color: #003f88;
     font-weight: 700;
  }
@@ -158,18 +163,20 @@ p {
     }
     
     .container {
-        margin: 2em auto;
+        margin: 0 auto;
     }
     header {
         text-align: center;
+        
     }
     nav ul {
         flex-direction: row;
         justify-content: center;
+        
     }
     nav li {
         margin: 0 auto;
-        font-size: .6rem;
+        font-size: 1rem;
     }
     .info-text {
         margin-top: 0;
@@ -188,16 +195,25 @@ p {
     h2 {
         padding-bottom: 0;
     }
-    
+
+    .wrapper {
+        background-color: #fff;
+     }
     
     
  }
 
  @media (min-width:750px) {
+    .container {
+        margin: 4em auto;
+    }
 
+    .wrapper {
+        background-color:#d5bdaf;
+    }
     .container-flex{
         flex-direction: row;
-        padding-bottom: 1em;
+        padding-bottom: 0;
     }
     
     h1 {
@@ -213,10 +229,11 @@ p {
     
     nav ul {
        margin-left: 1rem; 
+       padding: 0;
+       
     }
     nav li {
-    
-        font-size: .6rem;
+        font-size: 1rem;
         margin-left: 2rem ;
     }
    
@@ -224,8 +241,7 @@ p {
         order: 1;
     }
    
-   
-
+    
     
  }
 
@@ -233,28 +249,28 @@ p {
  /* media Quries for phones and tablets */
  @media (max-width:500px) {
     .container {
-        margin: 1em auto;
+        margin: 0 auto;
     }
     .container-flex {
-        padding-bottom: .5em;
+        padding-bottom: 0;
     }
     header {
         text-align: center;
         padding: .2rem 0;
     }
     h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     nav li {
-        font-size: .6rem;
+        font-size: 1rem;
+        margin: .8em 0;
     }
+   
    
     .info-text {
         text-align: center;
         width: 100%;
-        margin-top: 0;
-        order: 1;
-        
+        /* order: 1; */
      }
     
    
@@ -271,8 +287,7 @@ p {
     }
     
     .wrapper {
-        width: 100vw;
-        height: 300vh;
+       background-color: #fff;
     }
 
  }
