@@ -114,6 +114,7 @@ p {
  li a:hover,
  li a:focus,
  li a :active {
+
     color: #003f88;
     font-weight: 700;
  }
@@ -186,7 +187,7 @@ p {
         order: -1;
     }
     h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     h2,p {
         text-align: center;
@@ -259,10 +260,10 @@ p {
         padding: .2rem 0;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     nav li {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: .8em 0;
     }
    
